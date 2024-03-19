@@ -16,6 +16,7 @@ $password = $_POST["senha"];
 if($password == 'marcelinho')
 {
     echo('acertou a senha irmão!');
+    die();
     
     
 }
