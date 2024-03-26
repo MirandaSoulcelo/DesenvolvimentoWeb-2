@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-print_r($_POST);//Essa função é usada para enviar os dados do cliente para o servidor de maneira mais segura que o get, pois não aparecerá na URL
+print_r($_POST);
 
 $password = $_POST["senha"];
 //Nesta linha eu  estou declarando uma variavel 'password' e já atribuindo o valor que o usuário digitou que está dentro da super global $_POST
