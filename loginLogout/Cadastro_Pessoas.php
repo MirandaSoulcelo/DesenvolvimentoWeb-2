@@ -21,7 +21,7 @@
 
     
     header("location: welcome.php");
-    exit;
+    
 
 
 
