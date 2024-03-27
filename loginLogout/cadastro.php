@@ -30,18 +30,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
         <form action="Cadastro_Pessoas.php" method="post">
             <div class="form-group">
                 <label>Nome</label>
-                <input type="text" name="name" class="form-control" value="" required>
+                <input type="text" name="name" class="form-control" value="" placeholder="nome" required>
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
                 <label>E-mail</label>
-                <input type="email" name="email" class="form-control" value="" required>
+                <input type="email" name="email" class="form-control" value="" required placeholder="email">
                 <span class="help-block"></span>
             </div>    
             
             <div class="form-group">
                 <label>CPF</label>
-                <input type="text" name="cpf" class="form-control" value="" required>
+                <input type="text" name="cpf" class="form-control" value="" placeholder="000.000.000-03" required>
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
