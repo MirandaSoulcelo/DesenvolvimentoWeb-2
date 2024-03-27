@@ -30,22 +30,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
         <form action="Cadastro_Pessoas.php" method="post">
             <div class="form-group">
                 <label>Nome</label>
-                <input type="text" name="name" class="form-control" value="">
+                <input type="text" name="name" class="form-control" value="" required>
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
                 <label>E-mail</label>
-                <input type="text" name="email" class="form-control" value="">
+                <input type="email" name="email" class="form-control" value="" required>
                 <span class="help-block"></span>
             </div>    
             
             <div class="form-group">
                 <label>CPF</label>
-                <input type="text" name="cpf" class="form-control" value="">
+                <input type="text" name="cpf" class="form-control" value="" required>
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Acessar">
+                <input type="submit" class="btn btn-primary" value="Acessar" name="submit" id="submit">
             </div>
         </form>
     </div>    

@@ -1,4 +1,14 @@
 <?php
+    if(isset($_POST["submit"]))
+    {
+        include_once("config.php");
+        $name = $_POST["name"];
+        $cpf = $_POST["cpf"];
+        $email = $_POST["email"];
+
+        $result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, cpf) VALUES('$name', '$email', '$cpf')");
+
+    }
     $name = $_POST["name"];
     $cpf = $_POST["cpf"];
     $email = $_POST["email"];

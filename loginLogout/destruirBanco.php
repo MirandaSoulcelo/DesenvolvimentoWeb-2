@@ -12,11 +12,17 @@
   
     if(file_exists("BancoCadastro.php"))
     {
+        include_once("config.php");
         unlink("BancoCadastro.php");
+        $result = mysqli_query($conexao, "TRUNCATE TABLE cadastro");
+        header("location: welcome.php");
+        exit;
+
     }
     else
     {   
         header("location: welcome.php");
+        exit;
   
     }
 ?>
