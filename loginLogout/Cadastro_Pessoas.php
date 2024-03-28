@@ -9,6 +9,12 @@
         $result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, cpf) VALUES('$name', '$email', '$cpf')");
 
     }
+    else
+    {
+       
+        header("location: welcome.php");
+        die();
+    }
     $name = $_POST["name"];
     $cpf = $_POST["cpf"];
     $email = $_POST["email"];

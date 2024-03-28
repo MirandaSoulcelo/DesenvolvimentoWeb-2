@@ -33,19 +33,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <label for="username">Username</label>
             <div class="input">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    <input type="text" name="username" class="form-control" >
+                    <input type="text" name="username" placeholder="username" >
                     <span class="help-block"></span>
                 </div> 
 
                 <label for= "password">Password</label>
                 <div class="input">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="password" class="form-control" >
+                    <input type="password" name="password" placeholder="Password" >
                     <span class="help-block"></span>
                 </div>
                 
-                <div class="btn">
-                        <input type="submit" class="btn btn-primary" value="Acessar">
+                <div id="btn">
+                        <button type="submit"  value="Acessar">Acessar</button>
                 </div>
         </form>
     </div>

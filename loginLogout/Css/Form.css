@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
@@ -8,7 +7,10 @@ body
 {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-45deg, #73ff00, #f7f7f7, #000000);
+    font-family:sans-serif ;
+    background: linear-gradient(-45deg, #00ffc3, #261f27, #361a46);
+
+    
 }
 
 #form
@@ -21,25 +23,84 @@ body
     padding: 60px;
     width: min-content;
     align-items: center;
-    color: #0048ff;
+    color: #0a0c0f;
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
+    
 
 }
+
+
+
+
+
 .title
 {
     font-size: 1.8em;
     margin-bottom: 10%;
-
+    
 }
 .input
 {
     min-width: 280px;
     border-radius: 5px;
-    border: 2px #ce0000 solid;
+    border: 2px #000000 solid;
     padding: 5px;
     margin: 0px 0px 12px -5px;
 }
 .input i{
     font-size: 1.2em;
     padding: 5px;
-    background: -webkit-linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+    background: -webkit-linear-gradient(-45deg, #5b0b66, #611d57, #4e4e4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.input input
+{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translateY(-10%);
+    color: #2b344b;  
+}
+#btn
+{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+#btn button
+{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(-45deg, #ffce51, #5b0b66, #2b344b);
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#btn button:hover
+{
+    background: linear-gradient(-45deg, #6e4f01, #5b0b66, #0a0c0f);
+}
+
+
+@keyframes iniciar
+{
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+    100%
+    {
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
 }
