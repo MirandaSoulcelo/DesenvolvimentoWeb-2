@@ -27,21 +27,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
      <div id= "form">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <h2 class= "title">Login</h2>
-            <p> </p>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+           
             <label for="username">Username</label>
-            <div class="form-group">
-                <i class="fa-solid fa-user"></i>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     <input type="text" name="username" class="form-control" >
-                        <span class="help-block"></span>
+                    <span class="help-block"></span>
                 </div> 
+
                 <label for= "password">Password</label>
-                <div class="form-group">
+                <div class="input">
                     <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" class="form-control" >
-                        <span class="help-block"></span>
+                    <input type="password" name="password" class="form-control" >
+                    <span class="help-block"></span>
                 </div>
+                
                 <div class="btn">
                         <input type="submit" class="btn btn-primary" value="Acessar">
                 </div>
